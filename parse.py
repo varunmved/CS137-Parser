@@ -43,7 +43,4 @@ for line in content:
         if i == LIST_LEN-1:
             out+='\n'
             res.append(out)
-            #print(out)
-
-#close the file, we're done!
-f.close()
+            print(out)
