@@ -13,7 +13,8 @@ with open(INPUT_FILE) as f:
 
 #get the name of the gates/input/outputs we care about
 gates = content[0].split()
-gates = gates[1:]
+gates = gates[1:len(gates)-1]
+print(gates)
 LIST_LEN = len(gates)
 
 #delete the first two rows (name + '-----')
