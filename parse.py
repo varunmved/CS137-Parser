@@ -42,8 +42,7 @@ for line in content:
         
         #on the last line, add an empty line for readability 
         if i == LIST_LEN-1:
-            out+='\n'+'#'+str(count)
+            out+='\n'+'#1'
             res.append(out)
             print(out)
-            count+=1
 
