@@ -1,5 +1,6 @@
 #parse.py
 #parses the longass list for you
+count = 1
 
 res = []
 
@@ -33,14 +34,16 @@ for line in content:
     #create an emtpy string to ouptut
     out =  ""
     
-    #iterate through the gate values in the gate list, and the raw values from the text file
+   
+   #iterate through the gate values in the gate list, and the raw values from the text file
     for i in range(0,LIST_LEN):
-        
         #build our string
         out += gates[i]+ "= " + a[i] + "; "
-
+        
         #on the last line, add an empty line for readability 
         if i == LIST_LEN-1:
-            out+='\n'
+            out+='\n'+'#'+str(count)
             res.append(out)
             print(out)
+            count+=1
+
